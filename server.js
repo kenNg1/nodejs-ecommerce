@@ -43,10 +43,11 @@ app.use(flash());
 app.use(passport.initialize());
 //acts as a middleware to alter the request object and change the user value that is currently the session id from client cookie into the true deserialised user object
 app.use(passport.session());
-// app.use(function(req,res,next){
-//   res.locals.user = req.user;
-//   next();
-// });
+//every route will have this user object by default
+app.use(function(req,res,next){
+  res.locals.user = req.user;
+  next();
+});
 
 app.engine('ejs', engine);
 app.set('view engine', 'ejs');
