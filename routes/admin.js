@@ -15,3 +15,6 @@ router.post('/add-category', function(req,res,next) {
     return res.redirect('/add-category');
   });
 })
+
+
+module.exports = router;
