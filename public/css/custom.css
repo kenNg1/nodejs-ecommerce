@@ -5,3 +5,12 @@ body {
 #navbar-gap {
   margin-top: -5%;
 }
+
+.thumbnail {
+  height: 350px
+}
+
+.jumbotron-2 {
+  padding: 15px;
+  padding-top: 25px;
+}

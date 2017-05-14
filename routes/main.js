@@ -5,7 +5,7 @@ var Product = require('../models/product')
 //router or app is acceptable
 
 function paginate(req, res, next) {
-  var perPage = 9;
+  var perPage = 12;
   var page = req.params.page;
 
   Product
